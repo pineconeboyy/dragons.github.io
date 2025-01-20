@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+    
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+    
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+#wrapper {
+    border: solid;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100%;
+}
+
+#mid {
+    display: flex;
+    flex-shrink: 1;
+    flex: 8;
+}
+
+#topmenu {
+    border: solid;
+    height: auto;
+    flex: 1;
+}
+    
+#topmenu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#topmenu a {
+    border: solid;
+}
+
+#leftmenu, #rightmenu {
+    border: solid;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#maincon {
+    border: solid;
+    flex-grow: 1;
+    margin: 0% 1% 0% 1%;
+    width: 58%;
+}
+
+#footer {
+    border: solid;
+    flex: 1;
+}
