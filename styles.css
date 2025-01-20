@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    overflow-y: hidden;
 }
     
 *, *:before, *:after {
@@ -16,32 +17,38 @@ body, html {
 }
 
 #wrapper {
-    border: solid;
-    border-color: red;
     display: flex;
+    flex-shrink: 1;
+    flex-grow: 0;
     flex-direction: column;
-    height: auto;
-    min-height: 100%;
+    margin: .5% 1% 0% 1%;
+    height: 98%;
 }
 
 #mid {
     display: flex;
-    flex-shrink: 1;
-    flex: 8;
+    flex: .98;
+    overflow: hidden;
 }
 
 #topmenu {
-    border: solid;
-    height: auto;
-    flex: 1;
+    flex-shrink: 0;
+    margin: 0% 0% 2% 0%
 }
     
 #topmenu ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin: 1% 0% 0% 0%;
 }
 
-li {
+#topmenu a {
+    border: solid;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#topmenu li {
     list-style: none;
 }
 
@@ -49,24 +56,55 @@ a {
     text-decoration: none;
 }
 
-#topmenu a {
-    border: solid;
+p {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #leftmenu, #rightmenu {
     border: solid;
     flex-grow: 1;
     flex-shrink: 1;
+    width: 15%;
 }
 
 #maincon {
+    overflow-y: auto;
     border: solid;
-    flex-grow: 1;
+    flex-grow: 0;
     margin: 0% 1% 0% 1%;
-    width: 58%;
+    width: 66%;
+    padding: .5%;
+    max-height: 100%;
+}
+
+#maincon p {
+    font-size: 1.4em;
+}
+
+#rightmenu {
+    padding: 1% 0% 0% .5%;
+}
+
+#rightmenu h3, a {
+    font-family: "Bellefair", serif;
+}
+
+#rightmenu ul {
+    padding: 0% 0% 0% 8%;
+    list-style: square;
+}
+
+#rightmenu h3 {
+    font-size: 2em;
+}
+
+#rightmenu a {
+    font-size: 1.5em;
 }
 
 #footer {
-    border: solid;
-    flex: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
