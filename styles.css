@@ -69,6 +69,10 @@ p {
     width: 15%;
 }
 
+#leftmenu a {
+    font-size: 1.5em;
+}
+
 #maincon {
     overflow-y: auto;
     border: solid;
@@ -77,6 +81,16 @@ p {
     width: 66%;
     padding: .5%;
     max-height: 100%;
+}
+
+#conmap {
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0% 2% 0%;
+}
+
+#conmap img {
+    width: 58%;
 }
 
 #maincon p {
@@ -105,6 +119,12 @@ p {
 }
 
 #footer {
-    flex-grow: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: .02;
     flex-shrink: 1;
+    border: solid;
+    margin: .5% 0% 0% 0%;
+    padding: .5% 0% 0% 0%;
+    font-family: "Bellefair", serif;
 }
